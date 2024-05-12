@@ -4,6 +4,7 @@ if [ -z "$OWNER" ] || [ -z "$GITHUB_ACCESS_TOKEN" ] || [ -z "$LABELS" ] || [ -z 
   echo "please set enviornment variable in advance."
   echo "  GITHUB_ACCESS_TOKEN"
   echo "  OWNER"
+  echo "  REPO"
   echo "  LABELS"
   echo "  NAME"
   exit 1
