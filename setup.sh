@@ -6,4 +6,4 @@ cd actions-runner
 tar xzf ./actions-runner-linux-x64.tar.gz
 
 # install dependencies
-./bin/installdependencies.sh
+sudo ./bin/installdependencies.sh
