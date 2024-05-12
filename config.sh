@@ -1,19 +1,11 @@
 #!/bin/bash
 
-if [ -z "$OWNER" ]; then
-  echo "please set enviornment variable 'OWNER' in advance"
-  exit 1
-fi
-if [ -z "$GITHUB_ACCESS_TOKEN" ]; then
-  echo "please set enviornment variable 'GITHUB_ACCESS_TOKEN' in advance"
-  exit 1
-fi
-if [ -z "$LABELS" ]; then
-  echo "please set enviornment variable 'LABELS' in advance"
-  exit 1
-fi
-if [ -z "$NAME" ]; then
-  echo "please set enviornment variable 'NAME' in advance"
+if [ -z "$OWNER" ] || [ -z "$GITHUB_ACCESS_TOKEN" ] || [ -z "$LABELS" ] || [ -z "$NAME" ]; then
+  echo "please set enviornment variable in advance."
+  echo "  GITHUB_ACCESS_TOKEN"
+  echo "  OWNER"
+  echo "  LABELS"
+  echo "  NAME"
   exit 1
 fi
 
